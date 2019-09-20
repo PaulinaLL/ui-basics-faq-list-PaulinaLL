@@ -12,26 +12,32 @@
       }
       h1 {
         font-weight: 200;
-        margin: 20px;
+        /* margin: 20px; */
+        padding: 25px;
       }
       details {
-        padding: 10px;
+        border-left: solid orange 4px;
+        margin: 10px;
+        padding: 7px;
+      }
+      section {
         border: solid rgba(182, 178, 178, 0.726) 1px;
+        display: block;
         margin: 20px;
+        padding: 0px;
       }
       summary {
         list-style: none;
       }
-      details::before {
+
+      /* details::before {
         content: "";
         display: block;
         width: 4px;
         height: 25px;
         background-color: orange;
         position: absolute;
-        /* left: 20; */
-        /* padding: 0px;
-        margin: 0px; */
+        transform: scale();
       }
       p::before {
         content: "";
@@ -49,57 +55,67 @@
         height: 15px;
         background-color: orange;
         position: absolute;
-      }
+      } */
 
-      div {
+      .main_div {
         position: relative;
         /* background-color: blue; */
         max-width: 550px;
         width: 100vh;
         height: 100%;
         margin: 0 auto;
+        padding: 15px;
       }
     </style>
   </head>
   <body>
     <main>
-      <div>
+      <div class="main_div">
         <h1>Frequently Asked Questions</h1>
-        <details>
-          <summary
-            >How do i get a copy of my ticket for my expense report?</summary
-          >
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero
-            obcaecati fuga ratione recusandae mollitia facere ipsa laborum,
-            repellendus hic.
-          </p>
-        </details>
-        <details>
-          <summary>How can i get a refund?</summary>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero
-            obcaecati fuga ratione recusandae mollitia facere ipsa laborum,
-            repellendus hic.
-          </p>
-        </details>
-        <details>
-          <summary
-            >Why didn't I have the option to pay for my bags online?
-          </summary>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero
-            obcaecati fuga ratione recusandae mollitia facere ipsa laborum,
-            repellendus hic.
-          </p>
-        </details>
-        <details>
-          <summary>Can i pay for bags over the phone?</summary>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero
-            obcaecati fuga.
-          </p>
-        </details>
+
+        <section>
+          <details>
+            <summary
+              >How do I get a copy of my ticket for my expense report?</summary
+            >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              libero obcaecati fuga ratione recusandae mollitia facere ipsa
+              laborum, repellendus hic.
+            </p>
+          </details>
+        </section>
+        <section>
+          <details>
+            <summary>How can I get a refund?</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              libero obcaecati fuga ratione recusandae mollitia facere ipsa
+              laborum, repellendus hic.
+            </p>
+          </details>
+        </section>
+        <section>
+          <details>
+            <summary
+              >Why didn't I have the option to pay for my bags online?
+            </summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              libero obcaecati fuga ratione recusandae mollitia facere ipsa
+              laborum, repellendus hic.
+            </p>
+          </details>
+        </section>
+        <section>
+          <details>
+            <summary>Can I pay for bags over the phone?</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              libero obcaecati fuga.
+            </p>
+          </details>
+        </section>
       </div>
     </main>
   </body>
