@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="normalize.css" />
+    <title>FAQ list</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      h1 {
+        font-style: normal;
+        margin: 20px;
+      }
+      details {
+        padding: 25px;
+        border-style: groove;
+        margin: 20px;
+      }
+      summary {
+        list-style: none;
+      }
+      details::before {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 25px;
+        background-color: yellow;
+        position: absolute;
+        /* left: 20; */
+        /* padding: 0px;
+        margin: 0px; */
+      }
+      p::before {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 25px;
+        background-color: yellow;
+        position: absolute;
+      }
+
+      summary::before {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 15px;
+        background-color: yellow;
+        position: absolute;
+      }
+
+      div {
+        position: relative;
+        /* background-color: blue; */
+        max-width: 500px;
+        width: 100vh;
+        height: 100%;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>Frequently asked questions</h1>
+        <details>
+          <summary
+            >How do i get a copy of my ticket for my expense report</summary
+          >
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero
+            obcaecati fuga ratione recusandae mollitia facere ipsa laborum,
+            repellendus hic.
+          </p>
+        </details>
+        <details>
+          <summary>How can i get a refund</summary>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero
+            obcaecati fuga ratione recusandae mollitia facere ipsa laborum,
+            repellendus hic.
+          </p>
+        </details>
+        <details>
+          <summary
+            >Why didn't I have the option to pay for my bags online?
+          </summary>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero
+            obcaecati fuga ratione recusandae mollitia facere ipsa laborum,
+            repellendus hic.
+          </p>
+        </details>
+        <details>
+          <summary>Can i pay for bags over the phone?</summary>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero
+            obcaecati fuga.
+          </p>
+        </details>
+      </div>
+    </main>
+  </body>
+</html>
